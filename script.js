@@ -9,7 +9,7 @@ const deleted = document.getElementById("deletedata")
 function viewFirstRecord() {
   fetch('view-first-record.php')
     .then(response => response.json())
-    .then(data => {
+    .then(data =>  {
       // Display data on the UI
       console.log(data)
       first.innerText= `First record \n ID: ${data.id}, Name: ${data.name}, Email: ${data.email} `;
